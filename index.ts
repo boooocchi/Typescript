@@ -25,10 +25,10 @@ const exerciseOne = () => {
   // • Add an explicit type annotation to `pie`
   // • Try assigning invalid types, for fun
 
-  //   let pie: boolean;
-  //   pie = "blueberry";
+  let pie: string;
+  pie = "blueberry";
 
-  //   console.log("[Exercise 1.2]", `I like to eat ${pie}-flavored pie.`);
+  console.log("[Exercise 1.2]", `I like to eat ${pie}-flavored pie.`);
 
   // ======== Exercise 1.3 ========
   // Instructions:
