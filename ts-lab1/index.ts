@@ -100,19 +100,16 @@ const exerciseOne = () => {
   // We want to represent an inventoryItem as a structure where
   // the first entry is the item name and the second is the quantity
 
-  const inventoryItem: (string | number)[] = ["fidget wibbit", 11];
+  const inventoryItem: [string, number] = ["fidget wibbit", 11];
 
   // later we destructure it
-  const [name, qty]: (string | number)[] = inventoryItem;
+  const [name, qty] = inventoryItem;
 
   const msg = addInventory(name, qty);
 
   console.log("[Exercise 1.6]", msg);
 
-  function addInventory(
-    name: string | number,
-    quantity: number | string
-  ): string {
+  function addInventory(name: string, quantity: number): string {
     return `Added ${quantity} ${name}s to inventory.`;
   }
 };
